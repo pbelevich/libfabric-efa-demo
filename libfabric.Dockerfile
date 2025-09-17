@@ -52,3 +52,5 @@ RUN wget https://github.com/ofiwg/libfabric/releases/download/v${FABTESTS_VERSIO
         --with-libfabric="${BUILD_DIR}/libfabric" && \
         make -j$(nproc --all) && \
         make install
+
+WORKDIR ${APP_DIR}
